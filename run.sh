@@ -1,5 +1,7 @@
 #!/bin/bash
 
-mkdir -p target
-gcc -o target/main main.c -fopenmp -O3
-target/main
+javac -d ./build *.java
+cd build
+java Main
+cd ..
+rm -rf build
