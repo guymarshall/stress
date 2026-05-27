@@ -4,22 +4,17 @@ import java.util.Random;
 public class Main {
 	private static final Random RNG = new Random();
 
-	public static boolean isPrime(long number)
-	{
-	    if (number < 2)
-	    {
+	public static boolean isPrime(long number) {
+	    if (number < 2) {
 	        return false;
 	    }
 
-	    if (number == 2)
-	    {
+	    if (number == 2) {
 	        return true;
 	    }
 
-	    for (long i = 3; i < number; i++)
-	    {
-	        if (number % i == 0)
-	        {
+	    for (long i = 3; i < number; i++) {
+	        if (number % i == 0) {
 	            return false;
 	        }
 	    }
